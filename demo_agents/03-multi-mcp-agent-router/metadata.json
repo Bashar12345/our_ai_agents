@@ -1,0 +1,11 @@
+{
+  "id": 3,
+  "name": "Multi-MCP Agent Router",
+  "folder": "03-multi-mcp-agent-router",
+  "source_url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/main/mcp_ai_agents/multi_mcp_agent_forge",
+  "source_rel_path_original": "mcp_ai_agents/multi_mcp_agent_forge",
+  "source_rel_path_actual": "mcp_ai_agents/multi_mcp_agent_router",
+  "usage_original": "streamlit run agent_forge.py",
+  "usage_runnable": "streamlit run agent_forge.py",
+  "usage_resolution": "as-is"
+}

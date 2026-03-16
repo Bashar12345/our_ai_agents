@@ -1,0 +1,11 @@
+{
+  "id": 12,
+  "name": "Chat with Gmail Inbox",
+  "folder": "12-chat-with-gmail-inbox",
+  "source_url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/main/starter_ai_agents/chat_with_gmail",
+  "source_rel_path_original": "starter_ai_agents/chat_with_gmail",
+  "source_rel_path_actual": "advanced_llm_apps/chat_with_X_tutorials/chat_with_gmail",
+  "usage_original": "streamlit run chat_gmail.py",
+  "usage_runnable": "streamlit run chat_gmail.py",
+  "usage_resolution": "as-is"
+}

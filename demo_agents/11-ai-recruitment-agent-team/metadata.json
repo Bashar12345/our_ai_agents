@@ -1,0 +1,11 @@
+{
+  "id": 11,
+  "name": "AI Recruitment Agent Team",
+  "folder": "11-ai-recruitment-agent-team",
+  "source_url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/main/starter_ai_agents/ai_recruitment_agent_team",
+  "source_rel_path_original": "starter_ai_agents/ai_recruitment_agent_team",
+  "source_rel_path_actual": "advanced_ai_agents/multi_agent_apps/agent_teams/ai_recruitment_agent_team",
+  "usage_original": "streamlit run ai_recruitment_agent_team.py",
+  "usage_runnable": "streamlit run ai_recruitment_agent_team.py",
+  "usage_resolution": "as-is"
+}

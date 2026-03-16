@@ -1,0 +1,11 @@
+{
+  "id": 10,
+  "name": "AI Competitor Intelligence Agent",
+  "folder": "10-ai-competitor-intelligence-agent",
+  "source_url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/main/starter_ai_agents/ai_competitor_intelligence",
+  "source_rel_path_original": "starter_ai_agents/ai_competitor_intelligence",
+  "source_rel_path_actual": "advanced_ai_agents/multi_agent_apps/agent_teams/ai_competitor_intelligence_agent_team",
+  "usage_original": "streamlit run ai_competitor_analyser.py",
+  "usage_runnable": "streamlit run competitor_agent_team.py",
+  "usage_resolution": "fallback:competitor_agent_team.py"
+}

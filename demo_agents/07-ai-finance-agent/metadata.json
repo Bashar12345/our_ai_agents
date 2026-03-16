@@ -1,0 +1,11 @@
+{
+  "id": 7,
+  "name": "AI Finance Agent",
+  "folder": "07-ai-finance-agent",
+  "source_url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/main/starter_ai_agents/ai_finance_agent",
+  "source_rel_path_original": "starter_ai_agents/ai_finance_agent",
+  "source_rel_path_actual": "starter_ai_agents/xai_finance_agent",
+  "usage_original": "python xai_finance_agent.py",
+  "usage_runnable": "python3 xai_finance_agent.py",
+  "usage_resolution": "as-is|python3"
+}

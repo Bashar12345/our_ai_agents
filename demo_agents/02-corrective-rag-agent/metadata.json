@@ -1,0 +1,11 @@
+{
+  "id": 2,
+  "name": "Corrective RAG Agent",
+  "folder": "02-corrective-rag-agent",
+  "source_url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/main/rag_tutorials/corrective_rag",
+  "source_rel_path_original": "rag_tutorials/corrective_rag",
+  "source_rel_path_actual": "rag_tutorials/corrective_rag",
+  "usage_original": "streamlit run corrective_rag.py",
+  "usage_runnable": "streamlit run corrective_rag.py",
+  "usage_resolution": "as-is"
+}

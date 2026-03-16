@@ -1,0 +1,11 @@
+{
+  "id": 4,
+  "name": "AI Data Analysis Agent",
+  "folder": "04-ai-data-analysis-agent",
+  "source_url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/main/starter_ai_agents/ai_data_analysis_agent",
+  "source_rel_path_original": "starter_ai_agents/ai_data_analysis_agent",
+  "source_rel_path_actual": "starter_ai_agents/ai_data_analysis_agent",
+  "usage_original": "streamlit run ai_data_analyst.py",
+  "usage_runnable": "streamlit run ai_data_analyst.py",
+  "usage_resolution": "as-is"
+}

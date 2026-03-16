@@ -1,0 +1,11 @@
+{
+  "id": 1,
+  "name": "AI System Architect Advisor (R1)",
+  "folder": "01-ai-system-architect-advisor-r1",
+  "source_url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/main/advanced_ai_agents/single_agent_apps/ai_system_architect_r1",
+  "source_rel_path_original": "advanced_ai_agents/single_agent_apps/ai_system_architect_r1",
+  "source_rel_path_actual": "advanced_ai_agents/single_agent_apps/ai_system_architect_r1",
+  "usage_original": "streamlit run ai_system_architect_r1.py",
+  "usage_runnable": "streamlit run ai_system_architect_r1.py",
+  "usage_resolution": "as-is"
+}

@@ -1,0 +1,11 @@
+{
+  "id": 5,
+  "name": "AI Consultant Agent",
+  "folder": "05-ai-consultant-agent",
+  "source_url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/main/starter_ai_agents/ai_consultant_agent",
+  "source_rel_path_original": "starter_ai_agents/ai_consultant_agent",
+  "source_rel_path_actual": "advanced_ai_agents/single_agent_apps/ai_consultant_agent",
+  "usage_original": "adk web",
+  "usage_runnable": "adk web",
+  "usage_resolution": "as-is"
+}

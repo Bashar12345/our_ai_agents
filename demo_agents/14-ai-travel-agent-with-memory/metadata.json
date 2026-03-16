@@ -1,0 +1,11 @@
+{
+  "id": 14,
+  "name": "AI Travel Agent with Memory",
+  "folder": "14-ai-travel-agent-with-memory",
+  "source_url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/main/starter_ai_agents/ai_travel_agent_memory",
+  "source_rel_path_original": "starter_ai_agents/ai_travel_agent_memory",
+  "source_rel_path_actual": "advanced_llm_apps/llm_apps_with_memory_tutorials/ai_travel_agent_memory",
+  "usage_original": "streamlit run travel_agent_memory.py",
+  "usage_runnable": "streamlit run travel_agent_memory.py",
+  "usage_resolution": "as-is"
+}

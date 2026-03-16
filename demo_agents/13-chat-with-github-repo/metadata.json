@@ -1,0 +1,11 @@
+{
+  "id": 13,
+  "name": "Chat with GitHub Repo",
+  "folder": "13-chat-with-github-repo",
+  "source_url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/main/starter_ai_agents/chat_with_github",
+  "source_rel_path_original": "starter_ai_agents/chat_with_github",
+  "source_rel_path_actual": "advanced_llm_apps/chat_with_X_tutorials/chat_with_github",
+  "usage_original": "streamlit run chat_github.py",
+  "usage_runnable": "streamlit run chat_github.py",
+  "usage_resolution": "as-is"
+}

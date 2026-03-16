@@ -1,0 +1,11 @@
+{
+  "id": 15,
+  "name": "MCP Travel Planner Team",
+  "folder": "15-mcp-travel-planner-team",
+  "source_url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/main/mcp-travel-planner",
+  "source_rel_path_original": "mcp-travel-planner",
+  "source_rel_path_actual": "mcp_ai_agents/ai_travel_planner_mcp_agent_team",
+  "usage_original": "streamlit run app.py",
+  "usage_runnable": "streamlit run app.py",
+  "usage_resolution": "as-is"
+}

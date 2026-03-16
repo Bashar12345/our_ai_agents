@@ -1,0 +1,11 @@
+{
+  "id": 8,
+  "name": "AI Product Launch Intelligence",
+  "folder": "08-ai-product-launch-intelligence",
+  "source_url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/main/starter_ai_agents/ai_product_launch_intelligence",
+  "source_rel_path_original": "starter_ai_agents/ai_product_launch_intelligence",
+  "source_rel_path_actual": "advanced_ai_agents/multi_agent_apps/product_launch_intelligence_agent",
+  "usage_original": "streamlit run product_launch_intelligence_agent.py",
+  "usage_runnable": "streamlit run product_launch_intelligence_agent.py",
+  "usage_resolution": "as-is"
+}
