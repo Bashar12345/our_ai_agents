@@ -135,7 +135,7 @@ const agents: Agent[] = [
     id: 5,
     name: "AI Consultant Agent",
     shortName: "Consultant",
-    description: "Business strategist providing real-time market research and strategic recommendations via Perplexity AI.",
+    description: "Business strategist providing real-time market research and strategic recommendations via AI.",
     features: [
       "Real-time Web Research: Powered by Perplexity AI for up-to-the-minute market data",
       "Strategic Recommendations: Logic-driven business advice based on current trends",

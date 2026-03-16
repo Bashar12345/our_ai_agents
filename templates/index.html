@@ -107,27 +107,29 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div id="agent-grid" class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
                 {% for agent in agents %}
-                    <article class="agent-card card-lift group relative overflow-hidden rounded-2xl border border-slate-200 bg-white" data-category="{{ agent.category }}">
+                    <article class="agent-card card-lift group relative overflow-hidden rounded-2xl border border-slate-200 bg-white flex flex-col" data-category="{{ agent.category }}">
                         <div class="absolute left-0 right-0 top-0 h-1 bg-gradient-to-r {{ agent.gradient }}"></div>
-                        <div class="p-6">
+                        <div class="flex flex-col flex-1 p-6">
                             <div class="mb-4 flex items-start justify-between gap-3">
                                 <span class="inline-flex rounded-full bg-slate-100 px-2.5 py-1 text-xs font-semibold uppercase tracking-wider text-slate-600">{{ agent.category }}</span>
                                 <span class="text-sm font-semibold uppercase tracking-wider text-slate-400">Demo {{ '%02d'|format(agent.id) }}</span>
                             </div>
-                            <h3 class="mb-3 text-2xl font-semibold leading-tight text-slate-900 transition group-hover:text-orange-500">{{ agent.name }}</h3>
-                            <p class="mb-5 text-base leading-relaxed text-slate-500">{{ agent.description }}</p>
-                            <div class="mb-6 flex flex-wrap gap-1.5">
-                                {% for tech in agent.tech_list[:3] %}
-                                    <span class="rounded-md border border-slate-200 bg-slate-50 px-3 py-1.5 text-sm text-slate-600">{{ tech }}</span>
-                                {% endfor %}
-                                {% if agent.tech_list|length > 3 %}
-                                    <span class="rounded-md border border-slate-200 bg-slate-50 px-3 py-1.5 text-base text-slate-500">+{{ agent.tech_list|length - 3 }}</span>
-                                {% endif %}
+                            <h3 class="mb-3 text-xl font-semibold leading-tight text-slate-900 transition group-hover:text-orange-500">{{ agent.name }}</h3>
+                            <p class="mb-5 text-base leading-relaxed text-slate-500 flex-1">{{ agent.description }}</p>
+                            <div class="mt-auto">
+                                <div class="mb-6 flex flex-wrap gap-1.5">
+                                    {% for tech in agent.tech_list[:3] %}
+                                        <span class="rounded-md border border-slate-200 bg-slate-50 px-3 py-1.5 text-sm text-slate-600">{{ tech }}</span>
+                                    {% endfor %}
+                                    {% if agent.tech_list|length > 3 %}
+                                        <span class="rounded-md border border-slate-200 bg-slate-50 px-3 py-1.5 text-base text-slate-500">+{{ agent.tech_list|length - 3 }}</span>
+                                    {% endif %}
+                                </div>
+                                <a href="{{ url_for('demo_detail', slug=agent.slug) }}" class="inline-flex w-full items-center justify-center rounded-lg bg-gradient-to-r from-orange-500 to-orange-600 px-4 py-3 text-base font-semibold text-white transition hover:from-orange-600 hover:to-orange-700">
+                                    View Demo Page
+                                    <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                                </a>
                             </div>
-                            <a href="{{ url_for('demo_detail', slug=agent.slug) }}" class="inline-flex w-full items-center justify-center rounded-lg bg-gradient-to-r from-orange-500 to-orange-600 px-4 py-3 text-base font-semibold text-white transition hover:from-orange-600 hover:to-orange-700">
-                                View Demo Page
-                                <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                            </a>
                         </div>
                     </article>
                 {% endfor %}
