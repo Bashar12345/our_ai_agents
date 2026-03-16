@@ -28,7 +28,26 @@ cd demo_agents/<folder>
 ./run.sh
 ```
 
+Or run by index:
+
+```bash
+cd demo_agents
+./run_demo.sh 01
+```
+
+Setup all demos:
+
+```bash
+cd demo_agents
+./setup_all.sh
+```
+
 ## Notes
 
 - `setup.sh` creates a local virtualenv and installs dependencies if declared.
 - Demos may still require API credentials.
+- On this VM, install venv support first:
+
+```bash
+sudo apt install python3.12-venv
+```
