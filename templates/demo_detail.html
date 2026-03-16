@@ -36,11 +36,11 @@
     <div class="mesh-bg"></div>
 
     <header class="sticky top-0 z-40 border-b border-slate-700/70 bg-[#0f172a]/95 backdrop-blur-xl">
-        <div class="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto flex h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
             <a href="{{ url_for('index') }}" class="flex items-center gap-3">
-                <img src="https://betopialimited.com/_next/image?url=%2Flogo_tm.png&w=384&q=75" alt="Betopia Logo" class="h-10 w-auto object-contain brightness-0 invert">
+                <img src="https://betopialimited.com/_next/image?url=%2Flogo_tm.png&w=384&q=75" alt="Betopia Logo" class="h-12 w-auto object-contain brightness-0 invert">
             </a>
-            <a href="{{ url_for('index') }}#demos" class="inline-flex items-center rounded-lg border border-slate-600 bg-slate-800 px-3 py-1.5 text-sm font-semibold text-white transition hover:bg-slate-700">
+            <a href="{{ url_for('index') }}#demos" class="inline-flex items-center rounded-lg border border-slate-600 bg-slate-800 px-5 py-2.5 text-base font-semibold text-white transition hover:bg-slate-700">
                 <svg class="mr-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
                 Back to Demos
             </a>
@@ -52,18 +52,18 @@
             <div class="h-1.5 bg-gradient-to-r {{ agent.gradient }}"></div>
             <div class="grid gap-8 p-7 lg:grid-cols-[1.2fr_0.8fr] lg:p-10">
                 <div>
-                    <span class="inline-flex rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-slate-600">{{ agent.category }}</span>
-                    <h1 class="mt-4 text-3xl font-bold leading-tight text-slate-900 md:text-4xl">{{ agent.name }}</h1>
-                    <p class="mt-4 max-w-2xl text-base leading-relaxed text-slate-600">{{ agent.description }}</p>
-                    <div class="mt-6 flex flex-wrap items-center gap-3 text-sm text-slate-500">
+                    <span class="inline-flex rounded-full bg-slate-100 px-3 py-1 text-sm font-semibold uppercase tracking-wider text-slate-600">{{ agent.category }}</span>
+                    <h1 class="mt-4 text-4xl font-bold leading-tight text-slate-900 md:text-5xl">{{ agent.name }}</h1>
+                    <p class="mt-4 max-w-4xl text-base leading-relaxed text-slate-600">{{ agent.description }}</p>
+                    <div class="mt-6 flex flex-wrap items-center gap-3 text-base text-slate-500">
                         <span class="inline-flex items-center rounded-md bg-orange-50 px-3 py-1 font-medium text-orange-600">Demo {{ agent.id }} of {{ total_agents }}</span>
                         <span class="inline-flex items-center rounded-md bg-slate-100 px-3 py-1">Client Demo Ready</span>
                     </div>
                 </div>
                 <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
-                    <p class="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">Quick Start</p>
+                    <p class="mb-2 text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">Quick Start</p>
                     <pre class="code-block"><code>$ {{ agent.usage }}</code></pre>
-                    <a href="{{ agent.github }}" target="_blank" rel="noreferrer" class="mt-4 inline-flex items-center text-sm font-semibold text-orange-600 transition hover:text-violet-800">
+                    <a href="{{ agent.github }}" target="_blank" rel="noreferrer" class="mt-4 inline-flex items-center text-base font-semibold text-orange-600 transition hover:text-violet-800">
                         Open Documentation
                         <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                     </a>
@@ -73,37 +73,37 @@
 
         <section class="mt-8 grid gap-6 lg:grid-cols-[1.25fr_0.75fr]">
             <article class="detail-panel rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-                <h2 class="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-slate-600">Key Features</h2>
+                <h2 class="mb-4 text-base font-semibold uppercase tracking-[0.16em] text-slate-600">Key Features</h2>
                 <ul class="space-y-3">
                     {% for feature in agent.features %}
                         <li class="feature-item">
                             <span class="feature-check">
                                 <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span class="text-sm leading-relaxed text-slate-700">{{ feature }}</span>
+                            <span class="text-base leading-relaxed text-slate-700">{{ feature }}</span>
                         </li>
                     {% endfor %}
                 </ul>
 
                 <div class="mt-8 rounded-2xl border border-slate-200 bg-slate-50 p-5">
-                    <h3 class="mb-2 text-sm font-semibold text-slate-800">Use Case Example</h3>
-                    <p class="text-sm italic leading-relaxed text-slate-600">"{{ agent.example }}"</p>
+                    <h3 class="mb-2 text-base font-semibold text-slate-800">Use Case Example</h3>
+                    <p class="text-base italic leading-relaxed text-slate-600">"{{ agent.example }}"</p>
                 </div>
             </article>
 
             <aside class="space-y-6">
                 <article class="detail-panel rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-                    <h2 class="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-slate-600">Tech Stack</h2>
+                    <h2 class="mb-4 text-base font-semibold uppercase tracking-[0.16em] text-slate-600">Tech Stack</h2>
                     <div class="flex flex-wrap gap-2">
                         {% for tech in agent.tech_list %}
-                            <span class="rounded-md border border-orange-200 bg-orange-50 px-2.5 py-1 text-xs font-medium text-orange-600">{{ tech }}</span>
+                            <span class="rounded-md border border-orange-200 bg-orange-50 px-2.5 py-1 text-sm font-medium text-orange-600">{{ tech }}</span>
                         {% endfor %}
                     </div>
                 </article>
 
                 <article class="detail-panel rounded-2xl border border-orange-200 bg-gradient-to-br from-orange-50 to-purple-50 p-6 shadow-sm">
-                    <h2 class="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-orange-600">SaaS Potential</h2>
-                    <p class="text-sm leading-relaxed text-slate-700">{{ agent.saasReasoning }}</p>
+                    <h2 class="mb-3 text-base font-semibold uppercase tracking-[0.16em] text-orange-600">SaaS Potential</h2>
+                    <p class="text-base leading-relaxed text-slate-700">{{ agent.saasReasoning }}</p>
                 </article>
             </aside>
         </section>
@@ -111,30 +111,30 @@
         <section class="mt-8 grid gap-4 sm:grid-cols-3">
             {% if prev_agent %}
                 <a href="{{ url_for('demo_detail', slug=prev_agent.slug) }}" class="nav-card rounded-2xl border border-slate-200 bg-white p-4 text-left shadow-sm transition hover:border-violet-300">
-                    <p class="text-xs font-semibold uppercase tracking-wider text-slate-400">Previous Demo</p>
-                    <p class="mt-1 text-sm font-semibold text-slate-800">{{ prev_agent.name }}</p>
+                    <p class="text-sm font-semibold uppercase tracking-wider text-slate-400">Previous Demo</p>
+                    <p class="mt-1 text-base font-semibold text-slate-800">{{ prev_agent.name }}</p>
                 </a>
             {% else %}
                 <div class="nav-card rounded-2xl border border-slate-200 bg-slate-100 p-4 text-left opacity-70">
-                    <p class="text-xs font-semibold uppercase tracking-wider text-slate-400">Previous Demo</p>
-                    <p class="mt-1 text-sm font-semibold text-slate-500">None</p>
+                    <p class="text-sm font-semibold uppercase tracking-wider text-slate-400">Previous Demo</p>
+                    <p class="mt-1 text-base font-semibold text-slate-500">None</p>
                 </div>
             {% endif %}
 
             <a href="{{ url_for('index') }}#demos" class="nav-card rounded-2xl border border-slate-200 bg-white p-4 text-center shadow-sm transition hover:border-violet-300">
-                <p class="text-xs font-semibold uppercase tracking-wider text-slate-400">All Demos</p>
-                <p class="mt-1 text-sm font-semibold text-slate-800">Back to Showcase</p>
+                <p class="text-sm font-semibold uppercase tracking-wider text-slate-400">All Demos</p>
+                <p class="mt-1 text-base font-semibold text-slate-800">Back to Showcase</p>
             </a>
 
             {% if next_agent %}
                 <a href="{{ url_for('demo_detail', slug=next_agent.slug) }}" class="nav-card rounded-2xl border border-slate-200 bg-white p-4 text-right shadow-sm transition hover:border-violet-300">
-                    <p class="text-xs font-semibold uppercase tracking-wider text-slate-400">Next Demo</p>
-                    <p class="mt-1 text-sm font-semibold text-slate-800">{{ next_agent.name }}</p>
+                    <p class="text-sm font-semibold uppercase tracking-wider text-slate-400">Next Demo</p>
+                    <p class="mt-1 text-base font-semibold text-slate-800">{{ next_agent.name }}</p>
                 </a>
             {% else %}
                 <div class="nav-card rounded-2xl border border-slate-200 bg-slate-100 p-4 text-right opacity-70">
-                    <p class="text-xs font-semibold uppercase tracking-wider text-slate-400">Next Demo</p>
-                    <p class="mt-1 text-sm font-semibold text-slate-500">None</p>
+                    <p class="text-sm font-semibold uppercase tracking-wider text-slate-400">Next Demo</p>
+                    <p class="mt-1 text-base font-semibold text-slate-500">None</p>
                 </div>
             {% endif %}
         </section>

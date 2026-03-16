@@ -4,7 +4,7 @@ cd "$(dirname "$0")/source"
 
 if [ ! -d .venv ]; then
   if ! python3 -m venv .venv 2>/tmp/venv_error.log; then
-    echo "python3 -m venv failed, trying virtualenv fallback..."
+    echo "python3 -m venv failed; using virtualenv fallback..."
     python3 -m pip install --user virtualenv
     python3 -m virtualenv .venv
   fi
@@ -22,16 +22,4 @@ else
   echo "No requirements.txt or pyproject.toml found. Install dependencies manually if needed."
 fi
 
-if [[ "streamlit run competitor_agent_team.py" == streamlit* ]]; then
-  python - <<'PYCHECK'
-import importlib.util
-import sys
-if importlib.util.find_spec('streamlit') is None:
-    sys.exit(1)
-PYCHECK
-  if [ $? -ne 0 ]; then
-    python -m pip install streamlit
-  fi
-fi
-
-echo "Setup complete for 10-ai-competitor-intelligence-agent."
+echo "Setup complete for $(basename "$(pwd)")."
